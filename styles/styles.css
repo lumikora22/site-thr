@@ -1,0 +1,53 @@
+body {
+}
+.hero-section {
+  height: 100vh;
+  width: 1000vh;
+  background: #00adff;
+}
+
+.img-container {
+  width: 130px;
+  height: 75px;
+}
+.img-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.nav-menu{
+    display:flex;
+    height: 90px;
+}
+
+.list-pages{
+    display:flex;
+    aling-items:center;
+}
+.list-pages li{
+    list-style:none;
+    margin-right:20px;
+    font-size:20px;
+    font-weight:bold;
+    color:white;
+}
+.list-pages li a{
+    color: white;
+    text-decoration:none;
+
+}
+
+.container-hero{
+    color:white;
+}
+
+
+
+
+
+
+
+.intro-section {
+    background: white;
+  }
