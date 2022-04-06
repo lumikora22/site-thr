@@ -1,0 +1,155 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.show-submenu {
+  height: auto;
+  position: relative;
+}
+
+.list-pages > li:last-child a {
+  background: none;
+}
+
+.list-pages > li:last-child:hover {
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.list-pages > li > a:hover {
+  background-size: 100% 2px;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  -webkit-animation: loading 0.6s linear 3;
+          animation: loading 0.6s linear 3;
+}
+
+@-webkit-keyframes loading {
+  0% {
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+  }
+  100% {
+    -webkit-transform: rotateX(180deg);
+            transform: rotateX(180deg);
+  }
+}
+
+@keyframes loading {
+  0% {
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+  }
+  100% {
+    -webkit-transform: rotateX(180deg);
+            transform: rotateX(180deg);
+  }
+}
+
+.list-pages > li > a {
+  padding-bottom: 10px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(currentColor), to(currentColor));
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  -webkit-transition: background-size 0.3s;
+  transition: background-size 0.3s;
+}
+
+.list-pages li > ul {
+  z-index: 900;
+}
+
+.list-pages .show-submenu:hover > ul {
+  opacity: 1;
+  visibility: visible;
+}
+
+.list-pages .show-submenu > ul {
+  opacity: 0;
+  -webkit-transition: visibility 0s, opacity 0.5s linear;
+  transition: visibility 0s, opacity 0.5s linear;
+  visibility: hidden;
+  border-radius: 10px;
+  background: #001872;
+  position: absolute;
+  top: 145%;
+  padding: 15px;
+  width: 300%;
+}
+
+.list-subpages li {
+  padding: 5px;
+  width: 90%;
+}
+
+.list-subpages li:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.list-pages li a:hover {
+  background-size: 100% 2px;
+}
+
+.btn-contact:hover {
+  background: #00071e;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.btn-info:hover {
+  background: #18638562;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.intro-container {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+  -webkit-animation-duration: 1;
+          animation-duration: 1;
+}
+
+.container-hero {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+}
+
+@-webkit-keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style-sass.css.map */

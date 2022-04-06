@@ -21,7 +21,20 @@
 		<title>THR Life Service - Seguridad y Tecnologia de Tehuacán</title>
 		<link rel="stylesheet" href="styles/normalize.css" />
 		<link rel="stylesheet" href="styles/styles.css" />
-        
+        <link rel="stylesheet" href="styles/sass/style-sass.css">
+        <script
+			src="https://code.jquery.com/jquery-3.6.0.min.js"
+			integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			crossorigin="anonymous"
+		></script>
+        <script
+			type="text/javascript"
+			src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"
+		></script>
+		<script
+			type="text/javascript"
+			src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"
+		></script>
 	</head>
 	<body>
         
@@ -39,11 +52,24 @@
 						
 					</div>
 					<ul class="list-pages">
-						<li><a href="#hability">Habilidades</a></li>
-						<li><a href="#service">Servicios</a></li>
+						<li>
+                            <a href="#hability">Habilidades</a>
+                        </li>
+						<li class="show-submenu">
+                            <a id="service-link" href="#service">Servicios</a>
+                            <ul class="list-subpages">
+                                <li><a href="/pages/cableado.html">Cableado Estructurado</a></li>
+                                <li><a href="pages/vigilancia.html">Video Vigilancia</a></li>
+                                <li><a href="pages/mantenimiento.html">Mantenimiento de PC</a></li>
+                                <li><a href="pages/puntoventa.html">Punto de Venta</a></li>
+                                <li><a href="pages/consumibles.html">Venta de consumibles</a></li>
+                                <li><a href="pages/seguridad.html">Dispositivos de Seguridad</a></li>
+                            </ul>
+                        </li>
+                        
 						<li><a href="#us">Nosotros</a></li>
 						<li><a href="/pages/contacto.html">Contacto</a></li>
-						<li><a href="#">Llamanos</a></li>
+						<li class="btn-call"><a href="#">Llamanos</a></li>
 					</ul>
 				</nav>
 				<div class="img-hero-container">
@@ -74,7 +100,7 @@
 				</div>
 			</div>
 		</header>
-		<section class="intro-container" id="us">
+		<section class="intro-container panel" id="us">
             <div class="intro-section">
                 <div class="info-thr">
                     <h2>THR Life Service</h2>
@@ -104,7 +130,7 @@
 			
 			<img src="assets/Group 7.png" alt="" class="img-decoration"></img>
 		</section>
-        <section class="hability-section" id="hability">
+        <section class="hability-section panel" id="hability">
             <div class="hability-container">
                 <div class="hability-title">
                     <div class="line"></div>
@@ -146,7 +172,7 @@
                 </div>
             </div>
         </section>
-        <section class="services-section" id="service">
+        <section class="services-section panel" id="service">
             <img class="decoration" src="assets/decotarion.png" alt="">
             <div class="services-container">
                
@@ -196,7 +222,7 @@
            
             
         </section>
-        <footer class="footer-section">
+        <footer class="footer-section" >
             <div class="logo-foot">
                 <img src="assets/image.png" alt="">
                 <h3>Nuestra Preparación la llave del éxito</h3>
@@ -230,4 +256,33 @@
             </div>
         </footer>
 	</body>
+
+    <script>
+       $(function () { // wait for document ready
+		// init
+		var controller = new ScrollMagic.Controller({
+			globalSceneOptions: {
+				triggerHook: 'onLeave',
+				duration: "200%" // this works just fine with duration 0 as well
+				// However with large numbers (>20) of pinned sections display errors can occur so every section should be unpinned once it's covered by the next section.
+				// Normally 100% would work for this, but here 200% is used, as Panel 3 is shown for more than 100% of scrollheight due to the pause.
+			}
+		});
+
+		// get all slides
+		var slides = document.querySelectorAll("section.panel");
+
+		// create scene for every slide
+		for (var i=0; i<slides.length; i++) {
+			new ScrollMagic.Scene({
+					triggerElement: slides[i]
+				})
+				.setPin(slides[i], {pushFollowers: false})
+				.addIndicators() // add indicators (requires plugin)
+				.addTo(controller);
+		}
+	});
+    </script>
+
+    
 </html>
