@@ -1,16 +1,22 @@
-var swiper = new Swiper(".mySwiper", {
-  spaceBetween: 10,
-  slidesPerView: 4,
-  freeMode: true,
-  watchSlidesProgress: true,
+let menu = document.querySelector(".list-pages");
+let button = document.querySelector("#menu-toggle");
+
+$("#menu-toggle").click(function () {
+  $(this).toggleClass("open");
+  if (button.classList.contains("open")) {
+    menu.style.visibility = "visible";
+    menu.style.opacity = "1";
+  } else {
+    menu.style.visibility = "hidden";
+    menu.style.opacity = "0";
+  }
 });
-var swiper2 = new Swiper(".mySwiper2", {
-  spaceBetween: 10,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  thumbs: {
-    swiper: swiper,
-  },
-});
+window.onscroll = function () {
+  var y = window.scrollY;
+  if (y > 1) {
+    document.querySelector(".mobile-menu").style.boxShadow =
+      "1px 6px 50px 7px rgba(0,0,0,0.47)";
+  } else {
+    document.querySelector(".mobile-menu").style.boxShadow = "none";
+  }
+};
