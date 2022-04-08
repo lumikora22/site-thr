@@ -1,113 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto - THR Life Service</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="icon" type="image/jpg" href="../assets/image.png" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<title>THR Life Service - Seguridad y Tecnologia de Tehuacán</title>
     <link
-        href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet" />
-    <link rel="stylesheet" href="/styles/normalize.css">
-    <link rel="stylesheet" href="/styles/contacto.css">
-
-</head>
-
-<body>
-    <header class="hero-section">
-        <div class="hero-container">
-            <nav class="nav-menu">
-                <div class="img-container">
-                    <a href="/">
-                        <img class="img-logo" src="../assets/image.png" alt="logo thrlifeservice" />
-
-                    </a>
-                </div>
-                <ul class="list-pages">
-                    <li><a href="#">Habilidades</a></li>
-                    <li><a href="#">Servicios</a></li>
-                    <li><a href="#">Nosotros</a></li>
-                    <li><a href="#">Contacto</a></li>
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+  />
+		<link rel="stylesheet" href="../styles/normalize.css" />
+		<link rel="stylesheet" href="../styles/styles.css" />
+		<link rel="stylesheet" href="../styles/sass/style-sass.css" />
+    <link rel="stylesheet" href="../styles/vigilancia.css">
+    <link rel="stylesheet" href="../styles/contacto.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="mobile-list">
+            <nav class="mobile-nav">
+                <ul class="mobile-ul">
+                    <li>
+                        <a href="#hability">Habilidades</a>
+                    </li>
+                    <li><a href="#us">Nosotros</a></li>
+                    <li><a href="../pages/contacto.html">Contacto</a></li>
                     <li><a href="#">Llamanos</a></li>
                 </ul>
             </nav>
         </div>
-    </header>
-    <div class="sections-page">
-        <section class="section-one">
-            <div class="img-title">
-                <img src="../assets/backgrounds/map.jpg" alt="">
-                <div class="shadow">
-                    <h2>Contactanos</h2>
+		<div class="mobile-menu">
+			<nav class="nav-menu">
+				<div class="img-container">
+					<a href="/">
+						<img
+							class="img-logo"
+							src="../assets/image.png"
+							alt="logo thrlifeservice"
+						/>
+					</a>
+                    <ul class="list-pages">
+                    <li>
+                        <a href="#hability">Habilidades</a>
+                    </li>
+                    <li class="show-submenu">
+                        <a id="service-link" href="#service">Servicios</a>
+                        <ul class="list-subpages">
+                            <li><a href="/pages/cableado.html">Cableado Estructurado</a></li>
+                            <li><a href="/pages/vigilancia.html">Video Vigilancia</a></li>
+                            <li><a href="/pages/mantenimiento.html">Mantenimiento de PC</a></li>
+                            <li><a href="/pages/puntoventa.html">Punto de Venta</a></li>
+                            <li><a href="/pages/consumibles.html">Venta de consumibles</a></li>
+                            <li><a href="/pages/seguridad.html">Dispositivos de Seguridad</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="#us">Nosotros</a></li>
+                    <li><a href="../pages/contacto.html">Contacto</a></li>
+                    <li class="btn-call"><a href="#">Llamanos</a></li>
+                    </ul>
+				</div>
+                
+				<div class="hamburger-container">
+					<a id="hamburger-icon" href="#" title="Menu">
+						<span class="line line-1"></span>
+						<span class="line line-2"></span>
+						<span class="line line-3"></span>
+					</a>
+				</div>
+			</nav>
+		</div>
+		
+        <div class="sections-page">
+            <section class="section-one">
+                <div class="img-title">
+                    <img src="../assets/backgrounds/map.jpg" alt="">
+                    <div class="shadow">
+                        <h2>Contactanos</h2>
+                    </div>
+    
                 </div>
-
-            </div>
-            <div class="map">
-                <div class="title">
-                    <h1>Encuentranos</h1>
-                    <img src="../assets/icons/map.png" alt="">
+                <div class="map">
+                    <div class="title">
+                        <h1>Encuentranos</h1>
+                        <img src="../assets/icons/map.png" alt="">
+                    </div>
+                    
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.616352772851!2d-97.40116908563213!3d18.45572027597249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c5bdf96b9f70b1%3A0x35deadb08ddb4731!2sTHR-Life%20Service!5e0!3m2!1ses-419!2sus!4v1648921265168!5m2!1ses-419!2sus"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.616352772851!2d-97.40116908563213!3d18.45572027597249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c5bdf96b9f70b1%3A0x35deadb08ddb4731!2sTHR-Life%20Service!5e0!3m2!1ses-419!2sus!4v1648921265168!5m2!1ses-419!2sus"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div >
+                    <form class="form-contact" action="https://formspree.io/f/xeqnlvzq" method="POST">
+                        <img src="../assets/decotarion.png" alt="">
+                        <div class="content-format">
+                            <h2>Dejanos un mensaje!</h2>
+                            <label>
+                                Proporciona tu email donde te contactaremos:
+                                <input type="email" name="email">
+                            </label>
+                            <br>
+                            <label>
+                                Mensaje con detalles de tu consulta:
+                                <textarea  name="message"  cols="30" rows="10"></textarea>
+                            </label>
+                            
+                            <!-- your other form fields go here -->
+                            <button type="submit">Enviar Mensaje!</button>
+                        </div>
+                       
+                    </form>
+                </div>
+            </section>
+
+        <footer class="footer-section"  >
+            <div class="logo-foot">
+                <img src="../assets/image.png" alt="">
+                <h3>Nuestra Preparación la llave del éxito</h3>
             </div>
             
-            <div >
-                <form class="form-contact" action="https://formspree.io/f/xeqnlvzq" method="POST">
-                    <img src="../assets/decotarion.png" alt="">
-                    <div class="content-format">
-                        <h2>Dejanos un mensaje!</h2>
-                        <label>
-                            Proporciona tu email donde te contactaremos:
-                            <input type="email" name="email">
-                        </label>
-                        <br>
-                        <label>
-                            Mensaje con detalles de tu consulta:
-                            <textarea  name="message"  cols="30" rows="10"></textarea>
-                        </label>
-                        
-                        <!-- your other form fields go here -->
-                        <button type="submit">Send</button>
-                    </div>
-                   
-                </form>
+            <div class="foot-container">
+                <div class="foot-1">
+                    <h2>Contactanos</h2>
+
+                    <p><span><img src="../assets/icons/Location 1.png" alt=""></span>Calle Miguel Lerdo de Tejada #910
+                        Col. Benito Juárez, Tehuacán, Pue.</p>
+                        <p><span><img src="../assets/icons/Mail 1.png" alt=""></span>ventas@thrlifeservice.mx</p>
+                        <p><span><img src="../assets/icons/Mobile 1.png" alt=""></span> 238 382 2280 / 238 390 1772</p>
+                        <p>© THR Life Service</p>
+                </div>
+                <div class="foot-2">
+                    <h2>Información</h2>
+                    <p>Sobre Nosotros</p>
+                    <p>Servicios</p>
+                    <p>Productos</p>
+                    <p>Soluciones</p>
+                </div>
+                <div class="foot-3">
+                    <h2>Redes Sociales</h2>
+                    <p>Facebook</p>
+                    <p>Instagram</p>
+                    <p>Whatsapp</p>
+
+                </div>
+                
             </div>
-        </section>
-    </div>
-
-    <!-- <FORM id="form1" class=form name=form1 action='' method=post encType=text/plain> Encabezado del mensaje: <input
-        id="title" />
-    <br />
-    Contenido de correo electrónico:
-    <textarea id='content' rows="4" cols="100%" style="width: 330px"></textarea>
-    <br />
-    <input type=button onclick=submitForm() value='Enviar correo' />
-    </form>
-    <script language="JavaScript" type="text/JavaScript">
-        function submitForm() {
-                var form = document.getElementById('form1');
-                var title = document.getElementById('title').value;
-                var content = document.getElementById('content').value;
-                form.action = 'mailto:dimantria60@gmail.com?subject=' + title + '&body='
-                        + content;
-                form.submit();
-                console.log('enviado')
-            }
-            </script> -->
-
-    
-</body>
-
+        </footer>
+		<script
+			src="https://code.jquery.com/jquery-3.6.0.min.js"
+			integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			crossorigin="anonymous"
+		></script>
+		<script src="../js/slider.js"></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
+  
+	</body>
 </html>

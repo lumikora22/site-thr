@@ -1,181 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cableado - THR Life Service</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="icon" type="image/jpg" href="../assets/image.png" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<title>THR Life Service - Seguridad y Tecnologia de Tehuacán</title>
     <link
-        href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet" />
-    <link rel="stylesheet" href="/styles/normalize.css">
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
-    <link rel="stylesheet" href="/styles/cableado.css">
-
-</head>
-<body>
-    <header class="hero-section">
-        <div class="hero-container">
-            <nav class="nav-menu">
-                <div class="img-container">
-                    <a href="/">
-                        <img class="img-logo" src="../assets/image.png" alt="logo thrlifeservice" />
-
-                    </a>
-                </div>
-                <ul class="list-pages">
-                    <li><a href="/">Habilidades</a></li>
-                    <li><a href="/">Servicios</a></li>
-                    <li><a href="/">Nosotros</a></li>
-                    <li><a href="/contacto">Contacto</a></li>
-                    <li><a href="/">Llamanos</a></li>
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+  />
+		<link rel="stylesheet" href="../styles/normalize.css" />
+		<link rel="stylesheet" href="../styles/styles.css" />
+		<link rel="stylesheet" href="../styles/sass/style-sass.css" />
+    <link rel="stylesheet" href="../styles/vigilancia.css">
+    
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="mobile-list">
+            <nav class="mobile-nav">
+                <ul class="mobile-ul">
+                    <li>
+                        <a href="#hability">Habilidades</a>
+                    </li>
+                    <li><a href="#us">Nosotros</a></li>
+                    <li><a href="../pages/contacto.html">Contacto</a></li>
+                    <li><a href="#">Llamanos</a></li>
                 </ul>
             </nav>
         </div>
-    </header>
+		<div class="mobile-menu">
+			<nav class="nav-menu">
+				<div class="img-container">
+					<a href="/">
+						<img
+							class="img-logo"
+							src="../assets/image.png"
+							alt="logo thrlifeservice"
+						/>
+					</a>
+                    <ul class="list-pages">
+                    <li>
+                        <a href="#hability">Habilidades</a>
+                    </li>
+                    <li class="show-submenu">
+                        <a id="service-link" href="#service">Servicios</a>
+                        <ul class="list-subpages">
+                            <li><a href="/pages/cableado.html">Cableado Estructurado</a></li>
+                            <li><a href="/pages/vigilancia.html">Video Vigilancia</a></li>
+                            <li><a href="/pages/mantenimiento.html">Mantenimiento de PC</a></li>
+                            <li><a href="/pages/puntoventa.html">Punto de Venta</a></li>
+                            <li><a href="/pages/consumibles.html">Venta de consumibles</a></li>
+                            <li><a href="/pages/seguridad.html">Dispositivos de Seguridad</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="#us">Nosotros</a></li>
+                    <li><a href="../pages/contacto.html">Contacto</a></li>
+                    <li class="btn-call"><a href="#">Llamanos</a></li>
+                    </ul>
+				</div>
+                
+				<div class="hamburger-container">
+					<a id="hamburger-icon" href="#" title="Menu">
+						<span class="line line-1"></span>
+						<span class="line line-2"></span>
+						<span class="line line-3"></span>
+					</a>
+				</div>
+			</nav>
+		</div>
+		
     <section class ="cableado-section">
-        <div class="title-container">
-            <img src="../assets/backgrounds/cableado.jpg" alt="">
-            <div class="shadow"></div>
-            <h1>Cableado Estructurado</h1>
-        </div> 
-        <div class="content-container">
-            <div class="text-container">
-                <h2>Realiza una instalación de red segura</h2>
+      <div class="title-container">
+          <img src="../assets/backgrounds/cableado.jpg" alt="">
+          <div class="shadow"></div>
+          <h1>Cableado Estructurado</h1>
+      </div> 
+      <div class="content-container">
+          <div class="text-container">
+            <h2>Realiza una instalación de red segura</h2>
                 <p>El cableado estructurado se define como el conjunto de cables, conectores, canalizaciones y dispositivos que componen la infraestructura de telecomunicaciones inferior de un edificio o recinto.</p>
                 <p>Esta estructura contiene una combinación de cables trenzados (UTP/STP/FTP), fibras ópticas (FO) y/o cables coaxiales que deben cumplir ciertos estándares universales para que puedan ser fácilmente entendidos por instaladores, administradores de redes…y cualquier otro técnico que trabaje con ellos.</p>
                 <p>Realizamos el tendido de cable para cámaras, también para redes locales (y de ser necesario te vendemos los routers o switchs requeridos) haciendo uso de cables como ethernet cat 6 a (para exteriores) o algún otro en su variedad.  Vincular computadoras para una red de trabajo o volver inteligente tu casa con interruptores automáticos.</p>
+          </div>
+          <div class="img-container-secundary">
+            <img src="../assets/workImg/trabajo cableado/ff2db14d-275d-4d91-8ae8-357ec878cedb.jpg" alt="">
+          </div>
+          
+      </div>
+  </section>
+  <section class="swipe-container">
+    <div class="title-contain">
+      <h2>Galería de Trabajo</h2>
+    </div>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+  
+           
+		
+        <footer class="footer-section"  >
+            <div class="logo-foot">
+                <img src="../assets/image.png" alt="">
+                <h3>Nuestra Preparación la llave del éxito</h3>
             </div>
             
-            <img src="../assets/workimg/trabajo cableado/ff2db14d-275d-4d91-8ae8-357ec878cedb.jpg" alt="">
-        </div>
-    </section>
-   <div class="abso">
-       <h2>Galería de Trabajo</h2>
-    <section class="slider">
-        <div
-      style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
-      class="swiper mySwiper2"
-    >
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="../assets/workImg/trabajo cableado/01f7de8a-9cd7-4cb6-8f8d-c0d4a93c43b7.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="../assets/workImg/trabajo cableado/1237c28e-f279-4fcb-9cd3-266ea01542fa.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="../assets/workImg/trabajo cableado/3b1ad929-880f-4f48-9568-2a20803cabf4.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="../assets/workImg/trabajo cableado/3e239c09-4a9e-4f9a-bec9-15e9c966177d.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="../assets/workImg/trabajo cableado/4365d5ed-ee58-4e91-bbc0-5bf643a19370.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="../assets/workImg/trabajo cableado/4fe48262-3ae0-4002-85eb-493ddddf6101.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="../assets/workImg/trabajo cableado/57d7394d-54ad-406b-b9bb-38acff54c1d4.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="../assets/workImg/trabajo cableado/6a0eb9ba-9cf9-40d9-a648-7b5e4209599f.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="../assets/workImg/trabajo cableado/79f4b414-b644-45da-9eb7-08b9eb2b4de7.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="../assets/workImg/trabajo cableado/704aeacb-9a4d-4fbf-b27c-9ed1cba5e924.jpg" />
-        </div>
-      </div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-    </div>
-    <div thumbsSlider="" class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="../assets/workImg/trabajo cableado/01f7de8a-9cd7-4cb6-8f8d-c0d4a93c43b7.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="../assets/workImg/trabajo cableado/1237c28e-f279-4fcb-9cd3-266ea01542fa.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="../assets/workImg/trabajo cableado/3b1ad929-880f-4f48-9568-2a20803cabf4.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="../assets/workImg/trabajo cableado/3e239c09-4a9e-4f9a-bec9-15e9c966177d.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="../assets/workImg/trabajo cableado/4365d5ed-ee58-4e91-bbc0-5bf643a19370.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="../assets/workImg/trabajo cableado/4fe48262-3ae0-4002-85eb-493ddddf6101.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="../assets/workImg/trabajo cableado/57d7394d-54ad-406b-b9bb-38acff54c1d4.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="../assets/workImg/trabajo cableado/6a0eb9ba-9cf9-40d9-a648-7b5e4209599f.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="../assets/workImg/trabajo cableado/704aeacb-9a4d-4fbf-b27c-9ed1cba5e924.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="../assets/workImg/trabajo cableado/79f4b414-b644-45da-9eb7-08b9eb2b4de7.jpg" />
-        </div>
-      </div>
-    </div>
+            <div class="foot-container">
+                <div class="foot-1">
+                    <h2>Contactanos</h2>
 
-    </section>
-   </div>
-    
-   <footer class="footer-section">
-    <div class="logo-foot">
-        <img src="../assets/image.png" alt="">
-        <h3>Nuestra Preparación la llave del éxito</h3>
-    </div>
-    
-    <div class="foot-container">
-        <div class="foot-1">
-            <h2>Contactanos</h2>
+                    <p><span><img src="../assets/icons/Location 1.png" alt=""></span>Calle Miguel Lerdo de Tejada #910
+                        Col. Benito Juárez, Tehuacán, Pue.</p>
+                        <p><span><img src="../assets/icons/Mail 1.png" alt=""></span>ventas@thrlifeservice.mx</p>
+                        <p><span><img src="../assets/icons/Mobile 1.png" alt=""></span> 238 382 2280 / 238 390 1772</p>
+                        <p>© THR Life Service</p>
+                </div>
+                <div class="foot-2">
+                    <h2>Información</h2>
+                    <p>Sobre Nosotros</p>
+                    <p>Servicios</p>
+                    <p>Productos</p>
+                    <p>Soluciones</p>
+                </div>
+                <div class="foot-3">
+                    <h2>Redes Sociales</h2>
+                    <p>Facebook</p>
+                    <p>Instagram</p>
+                    <p>Whatsapp</p>
 
-            <p><span><img src="../assets/icons/Location 1.png" alt=""></span>Calle Miguel Lerdo de Tejada #910
-                Col. Benito Juárez, Tehuacán, Pue.</p>
-                <p><span><img src="../assets/icons/Mail 1.png" alt=""></span>ventas@thrlifeservice.mx</p>
-                <p><span><img src="../assets/icons/Mobile 1.png" alt=""></span> 238 382 2280 / 238 390 1772</p>
-                <p>© THR Life Service</p>
-        </div>
-        <div class="foot-2">
-            <h2>Información</h2>
-            <p>Sobre Nosotros</p>
-            <p>Servicios</p>
-            <p>Productos</p>
-            <p>Soluciones</p>
-        </div>
-        <div class="foot-3">
-            <h2>Redes Sociales</h2>
-            <p>Facebook</p>
-            <p>Instagram</p>
-            <p>Whatsapp</p>
-
-        </div>
-        
-    </div>
-</footer>
-
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="../js/slider.js"></script>
-</body>
+                </div>
+                
+            </div>
+        </footer>
+		<script
+			src="https://code.jquery.com/jquery-3.6.0.min.js"
+			integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			crossorigin="anonymous"
+		></script>
+		<script src="../js/slider.js"></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+	</body>
 </html>

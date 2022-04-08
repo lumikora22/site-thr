@@ -1,59 +1,3 @@
-.hero-section {
-  height: auto;
-  width: 100%;
-  background: #00adff;
-  box-shadow: 0px 0px 10px #000000;
-  position: fixed;
-  top: 0;
-  padding: 10px;
-  z-index: 1000;
-}
-
-.img-container {
-  width: 130px;
-  height: 75px;
-  margin: 15px 0;
-}
-.img-logo {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.nav-menu {
-  display: flex;
-  height: 90px;
-  font-family: "Karla", sans-serif;
-  font-weight: 300;
-  font-size: 15px;
-  justify-content: space-between;
-}
-
-.hero-container {
-  margin: 0 140px;
-  position: relative;
-  height: inherit;
-}
-
-.list-pages {
-  display: flex;
-  align-items: center;
-}
-.list-pages li {
-  list-style: none;
-  margin-right: 35px;
-  font-size: 20px;
-  color: white;
-}
-.list-pages li a {
-  color: white;
-  text-decoration: none;
-}
-.list-pages li:last-child {
-  padding: 10px 25px;
-  background-color: rgba(255, 255, 255, 0.31);
-  border-radius: 10px;
-}
-
 /* Section Theme  */
 .sections-page p {
   font-family: "Roboto", "sans-serif";
@@ -67,7 +11,7 @@
   font-family: "Poppins", "sans-serif";
 }
 .section-one {
-  margin-top: 150px;
+  margin-top: 20px;
   padding: 0 140px;
   position: relative;
 }
@@ -128,10 +72,11 @@
   align-items: center;
   justify-content: center;
   margin: 50px 0;
-  padding: 60px;
+  padding: 30px;
   box-shadow: 6px 15px 24px 2px rgba(0, 0, 0, 0.41);
   font-family: "Roboto";
   position: relative;
+  overflow: hidden;
 }
 
 .form-contact input,
@@ -155,13 +100,13 @@
 }
 .form-contact h2 {
   font-size: 72px;
-  color: #5e656c;
+  color: white;
 }
 .form-contact img {
   position: absolute;
   top: 0;
-  width: 100%;
-  height: 100%;
+  width: 210%;
+  height: 387%;
   z-index: 50;
 }
 .content-format {
@@ -180,12 +125,12 @@
   font-family: "Roboto";
   font-size: 20px;
   width: 80%;
-  color: #5e656c;
+  color: white;
 }
 .form-contact button {
   padding: 15px 50px;
   border-radius: 10px;
-  border: 1px solid #00adff;
+  border: 1px solid white;
   background: #00adff;
   color: white;
   cursor: pointer;
@@ -196,4 +141,58 @@
 .form-contact button:hover {
   background: #e1e1e1;
   color: #00adff;
+}
+
+@media (min-width: 320px) and (max-width: 700px) {
+  .section-one {
+    padding: 0;
+    margin: 0;
+  }
+  .shadow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+  }
+  .map {
+    flex-direction: column;
+    margin: 50px 20px;
+  }
+  .map iframe {
+    width: 100%;
+    height: 300px;
+    margin-top: 43px;
+  }
+  .form-contact {
+    overflow: hidden;
+    margin: 50px 20px;
+  }
+  .form-contact img {
+    height: 200%;
+    width: 190%;
+  }
+  .content-format {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+  }
+  .content-format h2 {
+    color: white;
+    font-size: 40px;
+  }
+  .content-format button{
+    align-self: end;
+    border:1px solid white;
+    width: 50%;
+    margin-top: 20px;
+  }
+  .content-format label {
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    font-size: 16px;
+    color: white;
+  }
 }
