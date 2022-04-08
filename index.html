@@ -10,7 +10,7 @@
 			href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
 			rel="stylesheet"
 		/>
-        <link rel="icon" type="image/jpg" href="/assets/image.png"/>
+		<link rel="icon" type="image/jpg" href="/assets/image.png" />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
 			rel="stylesheet"
@@ -22,25 +22,46 @@
 		<title>THR Life Service - Seguridad y Tecnologia de Tehuacán</title>
 		<link rel="stylesheet" href="styles/normalize.css" />
 		<link rel="stylesheet" href="styles/styles.css" />
-        <link rel="stylesheet" href="styles/sass/style-sass.css">
-        
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        
+		<link rel="stylesheet" href="styles/sass/style-sass.css" />
+
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 	</head>
 	<body>
-        <div class="mobile-menu">
-            <nav class="nav-menu">
-                <div class="img-container">
-                    <a href="/">
-                        <img
-                        class="img-logo"
-                        src="assets/image.png"
-                        alt="logo thrlifeservice"
-                    />
-                    </a>
+		<div class="mobile-list">
+            <nav class="mobile-nav">
+                <ul class="mobile-ul">
+                    <li>
+                        <a href="#hability">Habilidades</a>
+                    </li>
+                    <!-- <li class="open-submenu">
+                        <a id="service-link" href="#service">Servicios</a>
+                        <ul class="list-subpages">
+                            <li><a href="/pages/cableado.html">Cableado Estructurado</a></li>
+                            <li><a href="pages/vigilancia.html">Video Vigilancia</a></li>
+                            <li><a href="pages/mantenimiento.html">Mantenimiento de PC</a></li>
+                            <li><a href="pages/puntoventa.html">Punto de Venta</a></li>
+                            <li><a href="pages/consumibles.html">Venta de consumibles</a></li>
+                            <li><a href="pages/seguridad.html">Dispositivos de Seguridad</a></li>
+                        </ul>
+                    </li> -->
                     
-                </div>
-                <ul class="list-pages">
+                    <li><a href="#us">Nosotros</a></li>
+                    <li><a href="/pages/contacto.html">Contacto</a></li>
+                    <li><a href="#">Llamanos</a></li>
+                </ul>
+            </nav>
+        </div>
+		<div class="mobile-menu">
+			<nav class="nav-menu">
+				<div class="img-container">
+					<a href="/">
+						<img
+							class="img-logo"
+							src="assets/image.png"
+							alt="logo thrlifeservice"
+						/>
+					</a>
+                    <ul class="list-pages">
                     <li>
                         <a href="#hability">Habilidades</a>
                     </li>
@@ -59,24 +80,24 @@
                     <li><a href="#us">Nosotros</a></li>
                     <li><a href="/pages/contacto.html">Contacto</a></li>
                     <li class="btn-call"><a href="#">Llamanos</a></li>
-                </ul>
-                <div id="menu-toggle">
-                    <div id="hamburger" class="hamburger">
-                      <span class="line"></span>
-                      <span class="line"></span>
-                      <span class="line"></span>
-                    </div>
-                    <div id="cross">
-                      <span></span>
-                      <span></span>
-                    </div>
-                  </div>
-            </nav>
-           </div>
+                    </ul>
+				</div>
+                
+				<div class="hamburger-container">
+					<a id="hamburger-icon" href="#" title="Menu">
+						<span class="line line-1"></span>
+						<span class="line line-2"></span>
+						<span class="line line-3"></span>
+					</a>
+				</div>
+			</nav>
+		</div>
+		
+        
+                
+           
 		<header class="hero-section">
 			<div class="hero-container">
-                
-				
 				<div class="img-hero-container">
 					<img
 						class="img-hero"
@@ -84,7 +105,7 @@
 						alt="logo thrlifeservice"
 					/>
 				</div>
-				<div class="container-hero">
+				<div class="container-hero" data-aos="fade-right">
 					<div class="hero-info">
 						<h1>Obtenga ojos de protección</h1>
 						<p>
@@ -105,41 +126,48 @@
 				</div>
 			</div>
 		</header>
-		<section class="intro-container"  id="us">
-            <div class="intro-section">
-                <div class="info-thr " data-aos="fade-right">
-                    <h2>THR Life Service</h2>
-                    <p>
-                        Somos una empresa profesional, dedicada a comercializar e instalar
-                        equipos confiables y de calidad. Buscamos solucionar las necesidades
-                        de nuestros clientes basándonos en nuestras capacidades y en la
-                        innovación tecnológica, proporcionando las mejores opciónes para su
-                        negocio.
-                    </p>
-                    <a class="btn-read" href="/pages/contacto.html"><button>Leer más</button></a>
-                </div>
-                <div class="img-thr" data-aos="fade-left">
-                    <img src="assets/Rectangle 9.png" alt="" />
-                </div>
-                <div class="icons-info" data-aos="fade-right">
-                    <div class="icon-1" data-aos="flip-left"
-                    data-aos-easing="ease-out-cubic"
-                    data-aos-duration="9000">
-                        <img src="assets/Settings-1 1.png" alt="">
-                        <p>Configuración Completa</p>
-                    </div>
-                    <div class="icon-2" data-aos="flip-left"
-                    data-aos-easing="ease-out-cubic"
-                    data-aos-duration="9000">
-                        <img src="assets/Security check.png" alt="">
-                        <p>Servicio de Confianza</p>
-                    </div>
-                </div>
-            </div>
-			
-			<img src="assets/Group 7.png" alt="" class="img-decoration"></img>
+		<section class="intro-container" id="us">
+			<div class="intro-section">
+				<div class="info-thr" data-aos="fade-right">
+					<h2>THR Life Service</h2>
+					<p>
+						Somos una empresa profesional, dedicada a comercializar e instalar
+						equipos confiables y de calidad. Buscamos solucionar las necesidades
+						de nuestros clientes basándonos en nuestras capacidades y en la
+						innovación tecnológica, proporcionando las mejores opciónes para su
+						negocio.
+					</p>
+					<a class="btn-read" href="/pages/contacto.html"
+						><button>Leer más</button></a
+					>
+				</div>
+				<div class="img-thr">
+					<img src="assets/Rectangle 9.png" alt="" />
+				</div>
+				<div class="icons-info" data-aos="fade-right">
+					<div
+						class="icon-1"
+						data-aos="flip-left"
+						data-aos-easing="ease-out-cubic"
+						data-aos-duration="9000"
+					>
+						<img src="assets/Settings-1 1.png" alt="" />
+						<p>Configuración Completa</p>
+					</div>
+					<div
+						class="icon-2"
+						data-aos="flip-left"
+						data-aos-easing="ease-out-cubic"
+						data-aos-duration="9000"
+					>
+						<img src="assets/Security check.png" alt="" />
+						<p>Servicio de Confianza</p>
+					</div>
+				</div>
+			</div>
+            <img src="assets/Group 7.png" alt="" class="img-decoration"></img>
 		</section>
-        <section class="hability-section panel" id="hability">
+		<section class="hability-section panel" id="hability">
             <div class="hability-container">
                 <div class="hability-title" data-aos="fade-down">
                     <div class="line"></div>
@@ -147,52 +175,55 @@
                         Habilidades
                     </h2>
                 </div>
-                
-                <div class="card anima" >
+                <div class="card" >
                     <div class="img-animation">
                         <img src="assets/work1.png" class="img-animation"  data-aos="fade-right"  alt="">
 
                     </div>
-                    <div class="card-body"  data-aos="fade-left">
+                    <div class="card-body" data-aos="fade-up-right">
                         <h2>Trabajo de Calidad</h2>
                         <p>Contamos con personal calificado para que las instalaciónes sean de primer nivel, nuestro personal tiene los conocimientos necesarios para realizar su trabajo con las mejores técnicas en la indistria.</p>
                     </div>
+                    
+                
                 </div>
                 <div class="card">
-                    <div class="card-body"  data-aos="fade-right">
+                    <div class="card-body"  data-aos="fade-up-right">
                         <h2>Planificación y 
                             Herramientas</h2>
                         <p>Nosotros planificamos tu trabajo y te asesoramos para que puedas elegir la mejor propuesta, además contamos con las herramientas necesarias para todos nuestros servicios.</p>
                     </div>
-                    <div class="img-animation">
+                    <div class="img-animation" >
 
-                        <img src="assets/work2.png" data-aos="fade-left" alt="" >
+                        <img src="assets/work2.png" alt="" data-aos="fade-up-right">
                     </div>
                    
                 </div>
                 <div class="card">
                     <div class="img-animation">
 
-                        <img src="assets/work3.png" alt=""  data-aos="fade-right">
+                        <img src="assets/work3.png" alt=""  data-aos="fade-up-right">
                     </div>
-                    <div class="card-body"  data-aos="fade-left">
+                    <div class="card-body" data-aos="fade-up-right">
                         <h2>Conocimientos Técnicos</h2>
                         <p>El equipo THR cuenta con conocimientos para la creación de redes mediante cableado de par trenzado, redes inalámbricas y implementación de seguridad para su red corporativa. </p>
                     </div>
                 </div>
                 <div class="card">
-                    <div class="card-body"  data-aos="fade-right">
+                    <div class="card-body"  data-aos="fade-up-right">
                         <h2>Versatilidad</h2>
                         <p>Ofrecemos una cantidad de servicios y nos adaptamos a sus necesidades tecnologicas, desde equipos eléctronicos como computadoras, laptos, impresoras, consumibles, etc. </p>
                     </div>
-                    <div class="img-animation">
+                    <div class="img-animation" >
 
-                        <img src="assets/work4.png"  data-aos="fade-left" alt="">
+                        <img src="assets/work4.png" data-aos="fade-up-right"  alt="">
                     </div>
                     
                 </div>
+
             </div>
         </section>
+		
         <section class="services-section panel" id="service">
             <img class="decoration" src="assets/decotarion.png" alt="">
             <div class="services-container">
@@ -220,19 +251,19 @@
                         <a class="btn-service" href="/pages/mantenimiento.html"> <button>Ver más</button></a>
                        
                     </div>
-                    <div class="service-card"  data-aos="flip-left">
+                    <div class="service-card"  data-aos="flip-right">
                         <img src="assets/serv4.png"  alt="">
                         <h3>Puntos de Venta</h3>
                         <a class="btn-service" href="/pages/puntoventa.html"><button>Ver más</button></a>
                         
                     </div>
-                    <div class="service-card"  data-aos="flip-left">
+                    <div class="service-card"  data-aos="flip-right">
                         <img src="assets/serv5.png" alt="">
                         <h3>Venta de Consumibles</h3>
                         <a class="btn-service" href="/pages/consumibles.html"><button>Ver más</button></a>
                         
                     </div>
-                    <div class="service-card"  data-aos="flip-left">
+                    <div class="service-card"  data-aos="flip-right">
                         <img src="assets/serv6.png" alt="">
                         <h3>Dispositivos de Seguridad</h3>
                         <a class="btn-service" href="/pages/seguridad.html"><button>Ver más</button></a>
@@ -244,7 +275,7 @@
             
         </section>
        
-        <footer class="footer-section" data-aos="zoom-in" >
+        <footer class="footer-section"  >
             <div class="logo-foot">
                 <img src="assets/image.png" alt="">
                 <h3>Nuestra Preparación la llave del éxito</h3>
@@ -277,17 +308,15 @@
                 
             </div>
         </footer>
-        <script
-  src="https://code.jquery.com/jquery-3.6.0.min.js"
-  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-  crossorigin="anonymous"></script>
-        <script src="/js/slider.js"></script>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
-            AOS.init();
-          </script>
+		<script
+			src="https://code.jquery.com/jquery-3.6.0.min.js"
+			integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			crossorigin="anonymous"
+		></script>
+		<script src="/js/slider.js"></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
 	</body>
-
-
-    
 </html>
