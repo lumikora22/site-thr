@@ -217,7 +217,7 @@ html {
 
 a {
   text-decoration: none;
-  color: #95a5a6;
+  color: white;
   margin: 0.5em 1.5em;
   display: inline-block;
 }
@@ -347,6 +347,7 @@ a:hover, a:focus {
     width: 100%;
   }
   .intro-section a {
+    color: white;
     margin: 0;
   }
   .intro-section button {
